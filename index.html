@@ -1,0 +1,42 @@
+<htmL>
+  <head>
+    <body>
+      <h4 id="coisaMembroNome"></h4>
+      
+      <img src="astronauta-removebg-preview.png" id="coisaMembroImagem" style="width:30%;">
+      
+<button onclick="update()">Próximo</button>
+
+
+<script>
+var nomes = ["Bola", "Gol", "Chute", "Goleiro"];
+
+
+
+var imagens =
+["https://imagepng.org/bola/bola/",
+"https://cdn.awsli.com.br/600x1000/411/411938/produto/16688721/799fb22acf.jpg",
+"https://horadotreino.com.br/wp-content/uploads/2014/03/como-chutar-melhor2.jpg",
+"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8c0f9baa-f05c-4857-bfb1-c88c508706c1/decjzlr-2699aa22-7d26-453f-a91c-094ea1c89817.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhjMGY5YmFhLWYwNWMtNDg1Ny1iZmIxLWM4OGM1MDg3MDZjMVwvZGVjanpsci0yNjk5YWEyMi03ZDI2LTQ1M2YtYTkxYy0wOTRlYTFjODk4MTcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H3TgOtA6x8EVwxvFwEZlS4luHGXPXYDsL0XgQ-V_OXc"];
+
+var i = 0;
+function update(){
+
+i++
+var numerosDosNomesDasCoisas = 3
+if (i > numerosDosNomesDasCoisas)
+{
+  i = 0;
+}
+var uptadetedImage = imagens[i];
+var updatedName = nomes[i];
+document.getElementById("coisaMembroImagem").src = uptadetedImage;
+document.getElementById("coisaMembroNome").innerHTML = updatedName;
+}
+
+
+
+</script>
+    </body>
+  </head>
+</htmL>
